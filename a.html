@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   
+   		var x = 1;
+        setInterval(function(){
+            $("body").css("background-color","rgba(0,0,0,"+x+")");
+            x=x-0.1;
+        },500);
+        
+          var y = 1;
+        var t = setInterval(function(){
+            $("p").css("font-size",y+"px");
+            y=y+5;
+            
+            if(y>=60){
+              clearInterval(t);
+            }
+        },500);
+    
+});
+</script>
 <style>
 body {
-  background-color: rgb(156, 56, 86);
+  background-color: rgba(0,0,0,1);
 }
-</style>
+
+h1{
+   color:white;
+   }
+   </style>
 </head>
 <body>
 
-<h1>Hello World!</h1>
+<h1>誰殺了李新</h1>
 
-<p>This page has a light blue background color!</p>
+<p>隔壁老王</p>
 
 </body>
 </html>

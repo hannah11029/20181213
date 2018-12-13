@@ -9,6 +9,17 @@ $(document).ready(function(){
         $(".first_answer_m01").show();
     });
     
+    
+        $("#m01_1").click(function(){
+        $(".m01_answer").hide();
+        $(".m_01_1_answer").show();
+    });
+    
+        $("#m01_2").click(function(){
+        $(".m01_answer").hide();
+        $(".m_01_2_answer").show();
+    });
+    
         $("#m02").click(function(){
          $(".answer").hide();
         $(".first_answer_m02").show();
@@ -22,6 +33,10 @@ $(document).ready(function(){
    .answer{
       display:none;
    }
+      .m01_answer{
+      display:none;
+   }
+   
 </style>
 
 
@@ -35,7 +50,25 @@ $(document).ready(function(){
 </div>
 
 <div class="answer first_answer_m01">
-     今日做事不宜操之過急，心平氣和地處理手中的事務才會有收獲。已婚者在與另一半溝通時別表現出隨便的態度，易被另一半誤會。有機會收到他人贈送的電影、演唱會、球賽入場券等。
+    
+     
+     <div class="first_question">
+    第一題之一
+    <button id="m01_1">你想知道天蠍座運勢嗎?</button>
+    <button id="m01_2">你想知道雙魚座的運勢嗎?</button>
+    </div>
+    
+    <div class="m01_answer m_01_1_answer">
+              今日做事不宜操之過急，心平氣和地處理手中的事務才會有收獲。已婚者在與另一半溝通時別表現出隨便的態度，易被另一半誤會。有機會收到他人贈送的電影、演唱會、球賽入場券等。
+    </div>
+
+
+    <div class="m01_answer m_01_2_answer">
+             雙魚座 今日做事不宜操之過急，心平氣和地處理手中的事務才會有收獲。已婚者在與另一半溝通時別表現出隨便的態度，易被另一半誤會。有機會收到他人贈送的電影、演唱會、球賽入場券等。
+    </div>
+
+       
+
 </div>
 
 <div class="answer first_answer_m02">

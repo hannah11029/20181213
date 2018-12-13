@@ -5,6 +5,7 @@
 <script>
 $(document).ready(function(){
    
+   function showData(){
    		var x = 1;
         setInterval(function(){
             $("body").css("background-color","rgba(0,0,0,"+x+")");
@@ -20,6 +21,15 @@ $(document).ready(function(){
               clearInterval(t);
             }
         },500);
+     }
+     
+     $("h1").bind("click",function(){
+     
+       if(confirm("你真的想知道嗎?蕾雷會告你喔")){
+        showData();
+        }
+     
+     });
     
 });
 </script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#m01").click(function(){
+        $(".answer").hide();
+        $(".first_answer_m01").show();
+    });
+    
+        $("#m02").click(function(){
+         $(".answer").hide();
+        $(".first_answer_m02").show();
+    });
+    
+    
+});
+</script>
+
+<style>
+   .answer{
+      display:none;
+   }
+</style>
+
+
+
+</head>
+<body>
+<div class="first_question">
+    第一題
+    <button id="m01">你想知道星座運勢嗎?</button>
+     <button id="m02">你想知道八卦嗎?</button>
+</div>
+
+<div class="answer first_answer_m01">
+     今日做事不宜操之過急，心平氣和地處理手中的事務才會有收獲。已婚者在與另一半溝通時別表現出隨便的態度，易被另一半誤會。有機會收到他人贈送的電影、演唱會、球賽入場券等。
+</div>
+
+<div class="answer first_answer_m02">
+ 八卦是《易經》的基本概念，可代表一切自然現象的動靜狀態，每個卦由三個爻組成。「卦」有「懸掛」的意思，也代表將各種現象的標示豎立起來以便於觀察。
+</div>
+</body>
+</html>
